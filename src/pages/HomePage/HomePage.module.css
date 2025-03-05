@@ -1,0 +1,42 @@
+.homeBack {
+  border: 1px solid #e5bf4c;
+  border-radius: 5px;
+  padding: 25px 15px;
+  background-color: #a6a192;
+  box-shadow: #2c2b2b47 0px 4px 12px;
+}
+
+.homeTitle {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.linkGetStart {
+  display: block;
+  text-align: center;
+  color: #e3d6d6;
+  font-weight: 600;
+  transition: color 0.25s;
+  margin: 0 auto;
+}
+
+.linkGetStart:hover {
+  color: #ceba7d;
+}
+
+@media screen and (min-width: 768px) {
+  .homeTitle {
+    font-size: 30px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+}

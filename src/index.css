@@ -1,0 +1,152 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  margin: 0;
+
+  color: #e3d6d6;
+  background-color: rgba(98, 100, 101, 0.9);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  font-weight: 500;
+  text-decoration: inherit;
+  transition: color 0.25s;
+}
+
+button {
+  cursor: pointer;
+  font-family: Apple Chancery, cursive;
+  color: #ebe7e7;
+  border: 1px solid #290402;
+  background-color: #e5bf4c;
+  border-radius: 5px;
+  transition: border 0.25s, background-color 0.25s, transform 0.25s;
+}
+
+button:hover {
+  border: 1px solid #940a00;
+  background-color: #ed9236;
+  transform: scale(1.1);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  position: relative;
+
+  line-height: 1.5;
+  font-size: 18px;
+  color: #e3d6d6;
+  font-weight: 600;
+  margin-right: 20px;
+  padding: 10px 0;
+}
+
+.link.login {
+  margin-right: 0 !important;
+}
+
+.active {
+  position: relative;
+  color: #ceba7d;
+}
+
+.link::after,
+.active::after {
+  position: absolute;
+  content: '';
+  right: 0;
+  bottom: 8px;
+  width: 0;
+  height: 2px;
+  background-color: #ceba7d;
+  transition: width 0.3s ease-in-out;
+}
+
+.link::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 8px;
+  width: 0;
+  height: 2px;
+  background-color: #ceba7d;
+  transition: width 0.3s ease-in-out;
+}
+
+.link:hover {
+  color: #ceba7d;
+}
+
+.link:hover::after,
+.link:hover::before {
+  width: 100%;
+}
+
+.active::after {
+  width: 100%;
+}
+
+.container {
+  max-width: 375px;
+  padding: 25px 20px;
+  margin: 0 auto;
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+  .container {
+    width: 100%;
+    padding: 25px 20px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 30px 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1130px;
+    padding: 30px 65px;
+  }
+}

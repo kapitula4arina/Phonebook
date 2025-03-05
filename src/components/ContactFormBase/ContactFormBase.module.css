@@ -1,0 +1,11 @@
+.buttonForm {
+  display: inline-flex;
+
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.buttonForm:hover {
+  transform: scale(1);
+}

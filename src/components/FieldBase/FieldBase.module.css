@@ -1,24 +1,29 @@
 .groupForm {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 6px;
   margin-bottom: 20px;
   text-align: start;
 }
 
 .labelForm {
-  transition: color 0.25s;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--color-text-primary);
+  transition: color var(--transition-speed);
+  cursor: pointer;
 }
 
 .inputForm {
   background-color: transparent;
   outline: none;
-  border: 1px solid #e5bf4c;
-  border-radius: 5px;
-  padding: 10px 15px;
-  color: #e3d6d6;
+  border: 1.5px solid var(--color-button-bg);
+  border-radius: var(--border-radius);
+  padding: 12px 16px;
+  color: var(--color-text-primary);
   font-size: 17px;
-  transition: border 0.25s;
+  transition: border-color var(--transition-speed),
+    box-shadow var(--transition-speed);
 }
 
 .textareaForm {
@@ -29,18 +34,22 @@
 }
 
 .inputForm::placeholder {
-  color: #c9cadc;
+  color: var(--color-text-secondary);
 }
 
 .groupForm:hover .labelForm {
-  color: #ceba7d;
+  color: var(--color-button-bg);
 }
 
 .groupForm:hover .inputForm,
-.inputForm:focus-within {
-  border: 1px solid #ceba7d;
+.inputForm:focus {
+  border-color: var(--color-button-bg-hover);
+  box-shadow: 0 0 5px var(--color-button-bg-hover);
 }
 
 .errorMessage {
   color: #d30000 !important;
+  font-size: 14px;
+  margin-top: 4px;
+  font-weight: 600;
 }

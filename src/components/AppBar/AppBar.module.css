@@ -1,23 +1,26 @@
 .header {
-  background-color: #a6a192;
+  background-color: var(--color-bg);
   padding: 20px 0;
-  border-bottom: 1px solid #e5bf4c;
-  box-shadow: #2c2b2b47 0px 1px 5px;
+  border-bottom: 1px solid var(--color-button-bg);
+  box-shadow: rgba(44, 43, 43, 0.28) 0px 1px 5px;
   width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .containerHeader {
   display: flex;
-  justify-content: space-around;
-  flex-direction: row-reverse;
+  justify-content: space-between;
   align-items: center;
   padding-top: 0;
   padding-bottom: 0;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 10px;
 }
 
 .navContainer {
   display: flex;
   align-items: center;
+  gap: 20px;
 }

@@ -1,11 +1,20 @@
+.containerLogo {
+  display: flex;
+  align-items: center;
+}
+
 .brandLogo {
-  color: #e3d6d6;
+  color: var(--color-text-primary);
   font-size: 40px;
   font-weight: 600;
-  transition: color 0.25s;
+  transition: color var(--transition-speed);
   letter-spacing: 3px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .brandLogo:hover {
-  color: #ceba7d;
+  color: var(--color-button-bg);
 }

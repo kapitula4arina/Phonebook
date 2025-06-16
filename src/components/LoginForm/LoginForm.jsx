@@ -39,6 +39,7 @@ const LoginForm = () => {
       });
     actions.resetForm();
   };
+
   return (
     <div className="container">
       <div className={css.block}>

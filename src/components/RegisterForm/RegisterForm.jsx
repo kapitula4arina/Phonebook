@@ -67,9 +67,11 @@ const RegisterForm = () => {
               placeholder="Enter password"
               type="password"
             />
-            <button type="submit" className={css.buttonForm}>
-              Register
-            </button>
+            <div className={css.buttonWrapper}>
+              <button type="submit" className={css.buttonForm}>
+                Register
+              </button>
+            </div>
           </Form>
         </Formik>
 

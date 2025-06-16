@@ -5,7 +5,7 @@ const Loader = ({ size = 60 }) => {
   return (
     <div className={css.loaderContainer}>
       <PuffLoader
-        color="#e5bf4c"
+        color="#3c5994"
         loading={true}
         size={size}
         speedMultiplier={1.5}

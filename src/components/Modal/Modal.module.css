@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.678);
+  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,13 +14,20 @@
 
 .modalContent {
   position: relative;
-  background-color: #a6a192;
-  padding: 20px;
-  border: 1px solid #e5bf4c;
-  border-radius: 5px;
+  background-color: var(--color-bg);
+  padding: 30px 20px;
+  border: 1px solid var(--color-button-bg);
+  border-radius: var(--border-radius);
   width: 400px;
-  box-shadow: #2c2b2b47 0px 4px 12px;
+  max-height: 90vh;
+  box-shadow: rgba(44, 43, 43, 0.28) 0px 4px 12px;
   overflow-y: auto;
+  transition: transform var(--transition-speed),
+    box-shadow var(--transition-speed);
+}
+
+.modalContent:hover {
+  box-shadow: rgba(44, 43, 43, 0.35) 0px 6px 16px;
 }
 
 .modalContent::-webkit-scrollbar {
@@ -28,15 +35,12 @@
 }
 
 .modalContent::-webkit-scrollbar-thumb {
-  cursor: pointer;
-
-  background-color: #a6a192;
+  background-color: var(--color-bg);
   border-radius: 10px;
 }
 
 .modalContent::-webkit-scrollbar-track {
-  background-color: #a6a192;
-  padding: 2px;
+  background-color: var(--color-bg);
   border-radius: 10px;
 }
 
@@ -45,11 +49,10 @@
   top: 20px;
   right: 20px;
   cursor: pointer;
-  fill: #e3d6d6;
-
-  transition: fill 0.25s;
+  fill: var(--color-text-secondary);
+  transition: fill var(--transition-speed);
 }
 
 .closeIcon:hover {
-  fill: #ceba7d;
+  fill: var(--color-button-bg-hover);
 }

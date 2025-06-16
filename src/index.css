@@ -1,3 +1,20 @@
+/* Базові CSS Variables у корені */
+:root {
+  --color-bg: #dfe4eb; /* світлий фон, як у твоєму HomePage */
+  --color-text-primary: #222222; /* темний текст */
+  --color-text-secondary: #6580b7; /* синій колір для заголовків */
+  --color-link: #6580b7;
+  --color-link-hover: #3c5994;
+  --color-button-bg: #6580b7;
+  --color-button-bg-hover: #3c5994;
+  --color-button-text: #ffffff;
+
+  --font-family-base: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --border-radius: 12px;
+  --transition-speed: 0.3s;
+}
+
+/* Загальні скидання */
 *,
 *::before,
 *::after {
@@ -9,14 +26,13 @@ html {
 }
 
 body {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: var(--font-family-base);
   line-height: 1.5;
   font-weight: 400;
-
   margin: 0;
 
-  color: #e3d6d6;
-  background-color: rgba(98, 100, 101, 0.9);
+  color: var(--color-text-primary);
+  background-color: #c3cbd6;
 }
 
 h1,
@@ -42,23 +58,32 @@ ul {
 a {
   font-weight: 500;
   text-decoration: inherit;
-  transition: color 0.25s;
+  transition: color var(--transition-speed);
+  color: var(--color-link);
+}
+
+a:hover,
+a:focus {
+  color: var(--color-link-hover);
 }
 
 button {
   cursor: pointer;
-  font-family: Apple Chancery, cursive;
-  color: #ebe7e7;
-  border: 1px solid #290402;
-  background-color: #e5bf4c;
-  border-radius: 5px;
-  transition: border 0.25s, background-color 0.25s, transform 0.25s;
+  font-family: var(--font-family-base);
+  color: var(--color-button-text);
+  border: none;
+  background-color: var(--color-button-bg);
+  border-radius: var(--border-radius);
+  padding: 0.75em 1.5em;
+  font-weight: 600;
+  transition: background-color var(--transition-speed),
+    transform var(--transition-speed);
 }
 
-button:hover {
-  border: 1px solid #940a00;
-  background-color: #ed9236;
-  transform: scale(1.1);
+button:hover,
+button:focus {
+  background-color: var(--color-button-bg-hover);
+  transform: scale(1.05);
 }
 
 img {
@@ -69,13 +94,13 @@ img {
 
 .link {
   position: relative;
-
   line-height: 1.5;
   font-size: 18px;
-  color: #e3d6d6;
+  color: var(--color-text-primary);
   font-weight: 600;
   margin-right: 20px;
   padding: 10px 0;
+  cursor: pointer;
 }
 
 .link.login {
@@ -83,8 +108,8 @@ img {
 }
 
 .active {
+  color: var(--color-button-bg);
   position: relative;
-  color: #ceba7d;
 }
 
 .link::after,
@@ -95,8 +120,8 @@ img {
   bottom: 8px;
   width: 0;
   height: 2px;
-  background-color: #ceba7d;
-  transition: width 0.3s ease-in-out;
+  background-color: var(--color-button-bg);
+  transition: width var(--transition-speed) ease-in-out;
 }
 
 .link::before {
@@ -106,12 +131,12 @@ img {
   bottom: 8px;
   width: 0;
   height: 2px;
-  background-color: #ceba7d;
-  transition: width 0.3s ease-in-out;
+  background-color: var(--color-button-bg);
+  transition: width var(--transition-speed) ease-in-out;
 }
 
 .link:hover {
-  color: #ceba7d;
+  color: var(--color-button-bg);
 }
 
 .link:hover::after,

@@ -1,12 +1,84 @@
-# React + Vite
+# 📱 PhoneBook App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+PhoneBook is a responsive web application for managing personal contacts.  
+Users can register, log in, create, edit and delete contacts. All user data is saved to a remote backend and remains available after re-login.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+✔ User registration & authentication (JWT)  
+✔ Private and public routes  
+✔ Create, edit and delete contacts  
+✔ Search & filter contacts  
+✔ Persistent state using Redux Persist  
+✔ Form validation (Formik + Yup)  
+✔ Responsive layout (mobile, tablet, desktop)  
+✔ Loader & notifications for better UX  
+✔ Smooth micro animations (Framer Motion)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧰 Tech Stack
+
+**Frontend:**
+
+- React
+- Redux Toolkit
+- React Router
+- Axios
+- Formik + Yup
+- Redux Persist
+- Framer Motion
+- React Hot Toast
+- React Spinners
+- Vite
+- CSS Modules
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/kapitula4arina/Phonebook.git
+cd Phonebook
+
+### 2️⃣ Install dependencies
+
+```bash
+npm install
+
+### Run the application
+
+```bash
+npm run dev
+
+---
+
+## 🔗 Live Demo
+
+👉 **https://phonebook-swart-eight.vercel.app/**  
+📁 Repository: https://github.com/kapitula4arina/Phonebook
+
+---
+
+## 📌 Project Status
+
+🟢 Completed — improvements possible.
+
+---
+
+## 👩‍💻 Author
+
+**Oryna Kapitula**  
+Junior Fullstack Developer  
+
+📍 Zhytomyr, Ukraine  
+📧 Email: `verhovskayarina@gmail.com`  
+🔗 LinkedIn: *https://www.linkedin.com/in/oryna-kapitula/*  
+💬 Telegram: `@chuu341`
+
+---
+

@@ -44,16 +44,19 @@ Users can register, log in, create, edit and delete contacts. All user data is s
 ```bash
 git clone https://github.com/kapitula4arina/Phonebook.git
 cd Phonebook
+```  
 
 ### 2️⃣ Install dependencies
 
 ```bash
 npm install
+```  
 
-### Run the application
+### 3️⃣ Run the application
 
 ```bash
 npm run dev
+```  
 
 ---
 
